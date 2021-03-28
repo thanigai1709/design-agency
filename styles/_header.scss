@@ -1,0 +1,28 @@
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	.nav-bar {
+		padding: 2rem 1rem;
+		@include breakpoint-up(large) {
+			padding: 2rem 3.75rem;
+		}
+	}
+	.brand-logo svg {
+		width: 16.1875rem;
+		height: 3.8125rem;
+	}
+	&__links {
+		a {
+			font-size: $fs-sm;
+			color: $white;
+			text-decoration: none;
+			font-weight: 500;
+			&:not(:last-child) {
+				margin-right: 2.125rem;
+			}
+		}
+	}
+}

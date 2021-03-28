@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+@import "globals";
+@import "header";
+
+.hero {
+	background-image: url("../public/images/hero-bg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	@media (max-width: 800px) {
+		background-size: 150%;
+	}
+	@media (max-width: 500px) {
+		background-size: 230%;
+	}
+	&__text {
+		text-align: center;
+		color: $white;
+		@include breakpoint-down(medium) {
+			margin-top: 4rem;
+		}
+		h1 {
+			font-size: $fs-xxl;
+			font-weight: 400;
+			margin-bottom: 2rem;
+			@include breakpoint-down(medium) {
+				font-size: 4rem;
+			}
+		}
+		p {
+			font-size: $fs-md;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+			opacity: 0.8;
+		}
+	}
+
+	&__image {
+		max-width: 77.1875rem;
+		margin: 0 auto;
+	}
+}
+
+.features {
+	&__text {
+		max-width: 33rem;
+		h2 {
+			font-size: $fs-xl;
+			font-weight: 500;
+			color: $black;
+		}
+	}
+}
