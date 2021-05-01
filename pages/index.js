@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import ClientSection from "../components/Clients";
 export default function Home() {
 	return (
 		<>
@@ -19,7 +19,7 @@ export default function Home() {
 				</div>
 				<div className="hero__image container--pb container--px">
 					<div>
-						<Image src="/images/hero-img.png" quality="85" layout="responsive" width={1187} height={900} />
+						<Image src="/images/hero-img.png" quality="85" layout="responsive" width={1187} height={900} loading="eager" />
 					</div>
 				</div>
 			</section>
@@ -80,6 +80,81 @@ export default function Home() {
 							</div>
 							<div className="feature-item__title">Data tracking</div>
 							<div className="feature-item__descrp">The hardware and software, which when used together allows you to know where something is at any point in time</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className="process">
+				<div className="container container--py container--px">
+					<div className="process__text">
+						<div className="section-tag">how it works</div>
+						<h2>Our Process</h2>
+						<p>We know the best solution for all of your business ideas and we can help you solve all business problems</p>
+					</div>
+					<div className="process-item">
+						<div className="process-item__image">
+							<div>
+								<Image src="/images/process-img1.png" quality="90" width={480} height={270} layout="responsive" />
+							</div>
+						</div>
+						<div className="process-item__content">
+							<div className="process-item__content__icon">
+								<Image src="/images/process-icon1.svg" width={50} height={50} layout="intrinsic" />
+							</div>
+							<div className="process-item__content__title">Business Audit</div>
+							<div className="process-item__content__descrp">
+								An audit examines your business's financial records to verify they are accurate. This is done through a systematic review of your transactions.
+							</div>
+						</div>
+					</div>
+					<div className="process-item">
+						<div className="process-item__image">
+							<div>
+								<Image src="/images/process-img2.png" quality="90" width={480} height={270} layout="responsive" />
+							</div>
+						</div>
+						<div className="process-item__content">
+							<div className="process-item__content__icon">
+								<Image src="/images/process-icon2.svg" width={50} height={50} layout="intrinsic" />
+							</div>
+							<div className="process-item__content__title">Business Audit</div>
+							<div className="process-item__content__descrp">
+								An audit examines your business's financial records to verify they are accurate. This is done through a systematic review of your transactions.
+							</div>
+						</div>
+					</div>
+					<div className="process-item">
+						<div className="process-item__image">
+							<div>
+								<Image src="/images/process-img3.png" quality="90" width={480} height={270} layout="responsive" />
+							</div>
+						</div>
+						<div className="process-item__content">
+							<div className="process-item__content__icon">
+								<Image src="/images/process-icon3.svg" width={50} height={50} layout="intrinsic" />
+							</div>
+							<div className="process-item__content__title">Business Audit</div>
+							<div className="process-item__content__descrp">
+								An audit examines your business's financial records to verify they are accurate. This is done through a systematic review of your transactions.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<ClientSection></ClientSection>
+			<section className="start-with">
+				<div className="container container--px container--py">
+					<div className="start-with__row">
+						<div className="start-with__text">
+							<div className="section-tag">how it works</div>
+							<h2>Start working faster today</h2>
+							<p>We know the best solution for all of your business ideas and we can help you solve all business problems</p>
+							<a href="" className="cta-btn">
+								Get started
+							</a>
+						</div>
+						<div className="start-with__img">
+							<Image src="/images/start-img.png" quality="85" width={624} height={523} layout="responsive" />
 						</div>
 					</div>
 				</div>

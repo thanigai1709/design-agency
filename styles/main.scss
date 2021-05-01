@@ -47,6 +47,9 @@
 	background-repeat: no-repeat;
 	background-size: 120%;
 	background-position: center top;
+	@include breakpoint-down(medium) {
+		background-position: center;
+	}
 	&__text {
 		max-width: 33rem;
 		h2 {
@@ -63,9 +66,9 @@
 		@include breakpoint-down(medium) {
 			grid-template-columns: repeat(2, 1fr);
 		}
-		// @include breakpoint-down(small) {
-		// 	grid-template-columns: repeat(1, 1fr);
-		// }
+		@include breakpoint-down(small) {
+			grid-template-columns: repeat(1, 1fr);
+		}
 		.feature-item {
 			padding: 2.5rem;
 			background-color: $white;
@@ -83,6 +86,131 @@
 				line-height: 1.4;
 				color: $grey;
 			}
+		}
+	}
+}
+
+.process {
+	background-image: url("../public/images/process-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__text {
+		text-align: center;
+		color: $white;
+		max-width: 44.875rem;
+		margin: 0 auto;
+		.section-tag {
+			color: $white;
+			opacity: 0.8;
+		}
+		h2 {
+			font-size: $fs-xl;
+			font-weight: 400;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-size: $fs-md;
+			font-weight: 300;
+			margin-bottom: 1.5rem;
+			opacity: 0.8;
+		}
+	}
+	.process-item {
+		padding: 1.5rem 2rem 1.5rem 1rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-gap: 2.75rem;
+		align-items: center;
+		background-color: $white;
+		box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
+		border-radius: 15px;
+		margin-bottom: 2.875rem;
+		@include breakpoint-down(small) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__content {
+			&__icon {
+				margin-bottom: 1.3625rem;
+			}
+			&__title {
+				font-size: $fs-lg;
+				color: $black;
+				font-weight: 600;
+				margin-bottom: 1rem;
+			}
+			&__descrp {
+				font-size: $fs-sm;
+				font-weight: 300;
+				line-height: 1.4;
+				color: $grey;
+			}
+		}
+	}
+}
+
+.clients {
+	&__text {
+		text-align: center;
+		max-width: 56.0625rem;
+		margin: 0 auto;
+		h2 {
+			font-size: $fs-xl;
+			font-weight: 400;
+			margin-bottom: 3rem;
+		}
+	}
+	&__logo {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(1, auto);
+		grid-gap: 2rem 7rem;
+		@include breakpoint-down(small) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__footer {
+		max-width: 30rem;
+		text-align: center;
+		margin: auto;
+		p {
+			font-size: $fs-md;
+			margin: 2rem 0 0 0;
+		}
+	}
+}
+
+.start-with {
+	background-image: url("../public/images/process-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__row {
+		display: grid;
+		grid-template-columns: 3fr 5fr;
+		grid-gap: 4rem 6rem;
+		align-items: center;
+		@include breakpoint-down(small) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	&__text {
+		color: $white;
+		.section-tag {
+			color: $white;
+			opacity: 0.8;
+		}
+		h2 {
+			font-size: $fs-xl;
+			font-weight: 400;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-size: $fs-md;
+			font-weight: 300;
+			margin-bottom: 1.5rem;
+			opacity: 1;
 		}
 	}
 }
