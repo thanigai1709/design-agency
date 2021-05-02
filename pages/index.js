@@ -19,7 +19,7 @@ export default function Home() {
 				</div>
 				<div className="hero__image container--pb container--px">
 					<div>
-						<Image src="/images/hero-img.png" layout="responsive" width={1187} height={900} loading="eager" />
+						<Image src="/images/hero-img.png" layout="responsive" width={1187} height={900} />
 					</div>
 				</div>
 			</section>
