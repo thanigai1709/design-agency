@@ -117,10 +117,8 @@ export default function Home() {
 							<div className="process-item__content__icon">
 								<Image src="/images/process-icon2.svg" width={50} height={50} layout="intrinsic" />
 							</div>
-							<div className="process-item__content__title">Business Audit</div>
-							<div className="process-item__content__descrp">
-								An audit examines your business's financial records to verify they are accurate. This is done through a systematic review of your transactions.
-							</div>
+							<div className="process-item__content__title">Data tracking</div>
+							<div className="process-item__content__descrp">The hardware and software, which when used together allows you to know where something is at any point in time</div>
 						</div>
 					</div>
 					<div className="process-item">
@@ -133,7 +131,7 @@ export default function Home() {
 							<div className="process-item__content__icon">
 								<Image src="/images/process-icon3.svg" width={50} height={50} layout="intrinsic" />
 							</div>
-							<div className="process-item__content__title">Business Audit</div>
+							<div className="process-item__content__title">Results</div>
 							<div className="process-item__content__descrp">
 								An audit examines your business's financial records to verify they are accurate. This is done through a systematic review of your transactions.
 							</div>
