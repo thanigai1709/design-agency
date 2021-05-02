@@ -19,7 +19,7 @@ export default function Home() {
 				</div>
 				<div className="hero__image container--pb container--px">
 					<div>
-						<Image src="/images/hero-img.png" quality="85" layout="responsive" width={1187} height={900} loading="eager" />
+						<Image src="/images/hero-img.png" layout="responsive" width={1187} height={900} loading="eager" />
 					</div>
 				</div>
 			</section>
@@ -94,7 +94,7 @@ export default function Home() {
 					<div className="process-item">
 						<div className="process-item__image">
 							<div>
-								<Image src="/images/process-img1.png" quality="90" width={480} height={270} layout="responsive" />
+								<Image src="/images/process-img1.png" width={480} height={270} layout="responsive" />
 							</div>
 						</div>
 						<div className="process-item__content">
@@ -110,7 +110,7 @@ export default function Home() {
 					<div className="process-item">
 						<div className="process-item__image">
 							<div>
-								<Image src="/images/process-img2.png" quality="90" width={480} height={270} layout="responsive" />
+								<Image src="/images/process-img2.png" width={480} height={270} layout="responsive" />
 							</div>
 						</div>
 						<div className="process-item__content">
@@ -124,7 +124,7 @@ export default function Home() {
 					<div className="process-item">
 						<div className="process-item__image">
 							<div>
-								<Image src="/images/process-img3.png" quality="90" width={480} height={270} layout="responsive" />
+								<Image src="/images/process-img3.png" width={480} height={270} layout="responsive" />
 							</div>
 						</div>
 						<div className="process-item__content">
@@ -152,7 +152,7 @@ export default function Home() {
 							</a>
 						</div>
 						<div className="start-with__img">
-							<Image src="/images/start-img.png" quality="85" width={624} height={523} layout="responsive" />
+							<Image src="/images/start-img.png" width={624} height={523} layout="responsive" />
 						</div>
 					</div>
 				</div>
