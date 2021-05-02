@@ -26,7 +26,7 @@ const ClientSection = () => {
 					{clientImages.map((client, index) => {
 						return (
 							<div className="clients__logo__item" id={"client_logo" + index}>
-								<Image src={client} quality="100" layout="responsive" width={143} height={100} loading="eager" />
+								<Image src={client} layout="responsive" width={143} height={100} />
 							</div>
 						);
 					})}
